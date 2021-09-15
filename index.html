@@ -46,16 +46,19 @@
       </div>
     </div>
 
-  <script>
+
+    <form id="form">
+      <input id="FirstName" name="FirstName" placeholder="First Name" type="text">
+      <button type="submit">
+    </form>
+      
+    <script>
     const form = document.getElementById("form")
     form.addEventListener('submit', logSubmit);  
     function logSubmit(event) {
       analytics.trackForm(form, "form submitted")
      }
-  </script>
-    <form id="form">
-      <input id="FirstName" name="FirstName" placeholder="First Name" type="text">
-      <button type="submit">
-    </form>
+    </script>
+      
   </body>
 </html>
