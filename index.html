@@ -54,10 +54,7 @@
       
     <script>
     const form = document.getElementById("form")
-    form.addEventListener('submit', logSubmit);  
-    function logSubmit(event) {
-      analytics.trackForm(form, "form submitted")
-     }
+    analytics.trackForm(form, "form submitted")
     </script>
       
   </body>
