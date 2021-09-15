@@ -81,6 +81,10 @@ background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
     const form = document.getElementById("mktoForm_1001")
     function logSubmit(event) {
   analytics.trackForm(form, "form submitted")
+      
+  for (let i = 0; i < document.querySelector("form").elements.length; i++) {
+  console.log(document.querySelector("form").elements[i].value);
+}
 }
 
 form.addEventListener('submit', logSubmit);  
