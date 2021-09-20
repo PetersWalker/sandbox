@@ -45,17 +45,19 @@
         </script>
       </div>
     </div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">identify</h5>
+          <p class="card-text">Illustrates a Segment identify call</p>
+          <a href="#" onclick='send_track()'class="btn btn-primary">click me</a>
+          <script>
+            function send_track() {
+              analytics.track("button clicked");
+            }
+          </script>
+        </div>
+      </div>
 
-
-    <form id="form">
-      <input id="FirstName" name="FirstName" placeholder="First Name" type="text">
-      <button type="submit">
-    </form>
-      
-    <script>
-    const form = document.getElementById("form")
-    analytics.trackForm(form, "form submitted")
-    </script>
       
   </body>
 </html>
