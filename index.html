@@ -7,7 +7,6 @@
   analytics.load("VOgROwEazjosqo5uXCcC27DulxXLd8ox");
   analytics.page();
   }}();
-
 </script>
     
     <!-- Required meta tags -->
@@ -20,7 +19,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Segment Sandbox Site</h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -36,7 +35,7 @@
     
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">identify</h5>
+        <h5 class="card-title">Identify</h5>
         <p class="card-text">Illustrates a Segment identify call</p>
         <a href="#" onclick='send_identify()'class="btn btn-primary">identify yourself</a>
         <script>
@@ -47,12 +46,15 @@
       </div>
     </div>
     
-    
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Track</h5>
+    <p class="card-text">Illustrates a Segment track call</p>
+  
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Event Name</label>
-        <input type="email" class="form-control" id="trackInput" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">Event Name</small>
+        <input type="email" id="trackInput">
       </div>
       <script>
             function form_track() {
@@ -63,19 +65,9 @@
       <button type="submit" class="btn btn-primary" onClick='form_track()'>Track</button>
     </form>
     
-    
-    
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">track</h5>
-          <a href="#" onclick='send_track()'class="btn btn-primary">click me</a>
-          <script>
-            function send_track() {
-              analytics.track("button clicked");
-            }
-          </script>
-        </div>
-      </div>
+  </div>
+</div>
+
 
       
   </body>
