@@ -46,9 +46,28 @@
         </script>
       </div>
     </div>
+    
+    
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Event Name</label>
+        <input type="email" class="form-control" id="trackInput" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">Event Name</small>
+      </div>
+      <script>
+            function form_track() {
+              let eventName = document.getElementById('trackInput').value
+              analytics.track(eventName);
+            }
+       </script>
+      <button type="submit" class="btn btn-primary" onClick='form_track()'>Track</button>
+    </form>
+    
+    
+    
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">identify</h5>
+          <h5 class="card-title">track</h5>
           <a href="#" onclick='send_track()'class="btn btn-primary">click me</a>
           <script>
             function send_track() {
